@@ -1,0 +1,22 @@
+name: SimpleSellWand
+version: ${version}
+main: basementhost.randomchad.SellwandPlugin
+api-version: '26.1.2'
+description: Simple sell wand plugin for EconomyShopGUI-Premium and Vault
+author: Random_Chad
+softdepend:
+  - Vault
+  - EconomyShopGUI
+  - EconomyShopGUI-Premium
+commands:
+  simplesellwand:
+    description: SimpleSellWand admin command
+    aliases: [ssw, sellwand]
+    usage: /<command> reload
+permissions:
+  simplesellwand.use:
+    description: Allows using a stick sell wand on containers
+    default: true
+  simplesellwand.reload:
+    description: Allows reloading SimpleSellWand config
+    default: op

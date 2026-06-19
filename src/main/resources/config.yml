@@ -1,0 +1,31 @@
+# SimpleSellWand
+# Usage: sneak + right-click a supported container with a normal stick.
+
+# Only main-hand interaction is processed to avoid duplicate sells.
+wand-material: STICK
+require-sneak: true
+
+# Containers that can be sold from.
+# Use SHULKER_BOXES to allow all dyed shulker boxes.
+allowed-containers:
+  - CHEST
+  - TRAPPED_CHEST
+  - BARREL
+  - SHULKER_BOXES
+
+# EconomyShopGUI economy type to pay through Vault.
+# This plugin intentionally only supports Vault payouts.
+economy-type: VAULT
+
+# Minimum delay between uses per player, in milliseconds.
+cooldown-ms: 750
+
+messages:
+  prefix: "&8[&aSellWand&8] &r"
+  no-permission: "&cYou do not have permission to use this sell wand."
+  invalid-container: "&cThis block is not a supported sell container."
+  no-items: "&eThere are no items in this container that can be sold right now."
+  sold: "&aSold &f{amount}&a item(s) for &f${money}&a."
+  cooldown: "&ePlease wait before using the sell wand again."
+  vault-error: "&cVault payment failed. Nothing was removed."
+  reloaded: "&aSimpleSellWand config reloaded."
