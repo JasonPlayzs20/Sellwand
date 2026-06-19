@@ -12,6 +12,19 @@ allowed-containers:
   - TRAPPED_CHEST
   - BARREL
   - SHULKER_BOXES
+  - COPPER_CHEST
+  - WAXED_COPPER_CHEST
+  - EXPOSED_COPPER_CHEST
+  - WAXED_EXPOSED_COPPER_CHEST
+  - WEATHERED_COPPER_CHEST
+  - WAXED_WEATHERED_COPPER_CHEST
+  - OXIDISED_COPPER_CHEST
+  - WAXED_OXIDISED_COPPER_CHEST
+
+# If enabled, shulker box items inside a supported container are opened virtually,
+# and their internal contents are included in the same EconomyShopGUI sell calculation.
+# The shulker box item itself is kept; only sellable contents are removed.
+sell-shulker-contents: true
 
 # EconomyShopGUI economy type to pay through Vault.
 # This plugin intentionally only supports Vault payouts.
